@@ -1,0 +1,25 @@
+name: Backend CI
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Grant execute permission
+        run: chmod +x mvnw
+
+      - name: Build project
+        run: ./mvnw clean package -DskipTests
