@@ -1,4 +1,4 @@
-package Driver;
+package com.gabil.kargo.driver;
 
 import java.util.UUID;
 

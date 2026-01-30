@@ -31,3 +31,18 @@ build/
 
 ### VS Code ###
 .vscode/
+
+
+# Java
+target/
+*.class
+
+# IDE
+.vscode/
+.idea/
+
+# Secrets
+*.json
+.env
+application.properties
+delivery-ec28c-firebase-adminsdk-fbsvc-b3f482cbf3.json

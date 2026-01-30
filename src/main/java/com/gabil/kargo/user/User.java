@@ -82,6 +82,10 @@ public class User {
 	@Column(name = "last_login_at",nullable = false)
 	@UpdateTimestamp
 	private Instant lastloginAt;
+	
+	@Builder.Default
+	@Column(name = "deleted_status", nullable = false)
+	private boolean isDeleted = false;
 
 	
 }
