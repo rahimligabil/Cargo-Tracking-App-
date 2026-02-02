@@ -53,6 +53,7 @@ public class DeliveryService {
                 .build();
 
         deliveryRepository.save(delivery);
+        System.out.println("HELLO PROD");
 
         log.info("Yeni teslimat oluşturuldu → No: {} | Driver: {}", 
                 delivery.getDeliveryNo(),
