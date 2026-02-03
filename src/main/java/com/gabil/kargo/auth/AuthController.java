@@ -28,7 +28,8 @@ public class AuthController {
 
 	    User user = authService.signup(request);
 
-	    return ResponseEntity
+		System.out.println("DEPLOY TEST " + System.currentTimeMillis());
+		return ResponseEntity
 	            .status(HttpStatus.OK)
 	            .body(UserSummaryResponse.of(user));
 	}
