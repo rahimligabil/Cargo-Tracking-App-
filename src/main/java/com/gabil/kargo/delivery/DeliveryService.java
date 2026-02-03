@@ -54,7 +54,7 @@ public class DeliveryService {
 
         deliveryRepository.save(delivery);
         System.out.println("HELLO PROD");
-
+        System.out.println("DEPLOY TEST " + System.currentTimeMillis());
         log.info("Yeni teslimat oluşturuldu → No: {} | Driver: {}", 
                 delivery.getDeliveryNo(),
                 driver.getUserName() + " " + driver.getUserSurname());
