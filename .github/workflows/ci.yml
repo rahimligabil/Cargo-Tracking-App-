@@ -47,6 +47,6 @@ jobs:
           key: ${{ secrets.VPS_SSH_KEY }}
           script: |
             cd /opt/cargolate
-            docker compose pull
-            docker compose up -d
+            docker compose pull backend
+            docker compose up -d backend
             docker ps
