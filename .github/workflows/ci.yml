@@ -46,7 +46,7 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
           script: |
-            cd /opt/cargo
+            cd /opt/cargolate
             docker compose pull
             docker compose up -d
             docker ps
